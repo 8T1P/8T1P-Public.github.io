@@ -400,13 +400,13 @@
                         <strong class="required" aria-hidden="true"> (required)</strong>
                     </label>
 
-					<!-- Centered drop-down -->
-					<!--
+			<!-- Centered drop-down -->
+			<!--
                     <select id="wb-auto-09" name="" class="full-width form-control mrgn-bttm-md required" aria-invalid="false" style="width:200px;display: block; margin-left: auto; margin-right: auto; width: 40%;">					
-					-->
+			-->
 					
-					<!-- DROPDOWN OPTIONS -->                    
-					<select id="wb-auto-09" name="" class="full-width form-control mrgn-bttm-md required" aria-invalid="false">
+			<!-- DROPDOWN OPTIONS -->                    
+			<select id="wb-auto-09" name="" class="full-width form-control mrgn-bttm-md required" aria-invalid="false">
                         <option id="wb-auto-10" value="">Make a selection...</option>
                         <option id="wb-auto-11" value="Looking for a status update on my ATIP request">Looking for a status update on my ATIP request</option>
 						<option id="wb-auto-13" value="Reporting an issue with signing in">Reporting an issue with signing in</option>
@@ -420,7 +420,12 @@
             </div>
 
 
-
+	<!-- FYI LABEL = REMOVE -->
+	<div id="optn-01-label" class="" style="text-align:left;">
+		<span class="label label-danger" style="font-size:; align-content:;">Associated Dropdown Option:</span>
+		<span class="text-danger" style="font-size:; font-weight:bold; align-content:;">"Looking for a status update on my ATIP request"</span>
+	</div>
+		
             <!-- OPTION 1: Status Update -->
             <section id="status-update" class="form-group well" style="display:;">
                 
@@ -431,18 +436,26 @@
                 </p>
 				<br>
 				
-				<!-- FIELD: Button -->
+		<!-- FIELD: Button -->
                 <button id="" class="btn btn-primary" type="button" onclick="window.location.href='http://www.tbs-sct.gc.ca/ap/atip-aiprp/coord-eng.asp'">Find an ATIP Coordinator</button>
 				
 
             </section>
+	
+		
+
+	<!-- FYI LABEL = REMOVE -->
+	<div id="optn-02-label" class="" style="text-align:left;">
+		<span class="label label-danger" style="font-size:; align-content:;">Associated Dropdown Option:</span>
+		<span class="text-danger" style="font-size:; font-weight:bold; align-content:;">"Reporting an issue with signing in"</span>
+	</div>
 		
             <!-- OPTION 2: Report an issue with Signing In -->
             <section id="login-issue" class="form-group well" style="display:;">
                 <label for="details">Report an issue with signing in</label>
 				<p></p>
 				
-				<!-- FIELD: Name -->
+		<!-- FIELD: Name -->
                 <div>
                     <label class="required">
                         <span class="field-name">Name</span><strong class="required"> (required)</strong>
@@ -450,7 +463,7 @@
                     </label>
                 </div>
 				
-				<!-- FIELD: Email -->
+		<!-- FIELD: Email -->
                 <div>
                     <label class="required">
                         <span class="field-name">Email</span><strong class="required"> (required)</strong>
@@ -458,25 +471,25 @@
                     </label>
                 </div>
 				
-				<!-- FIELD: Details -->
+		<!-- FIELD: Details -->
                 <div class="mrgn-tp-md mrgn-bttm-md">
                     <label class="required">
                         <span class="field-name">Details</span><strong class="required"> (required)</strong>
 
-						<!-- Details instructions -->
-						<div>
-							<p style="font-weight:normal; margin-left:10px;">Please specify:</p>
-								<ul style="font-weight:normal;">
-									<li>The sign in service used</li>
-									<li>The issue you are experiencing</li>
-								</u>						
-						</div>
+			<!-- Details instructions -->
+			<div>
+				<p style="font-weight:normal; margin-left:10px;">Please specify:</p>
+					<ul style="font-weight:normal;">
+						<li>The sign in service used</li>
+						<li>The issue you are experiencing</li>
+					</u>						
+			</div>
 						
                         <textarea id="details-login" class="form-control" type="text" rows="5" cols="70" name="details" placeholder="Please read the instructions above."></textarea>
                     </label>
                 </div>
 				
-				<!-- FIELD: URL -->
+		<!-- FIELD: URL -->
                 <div>
                     <label class="required" for="login-err-url">
 						<span class="field-name"><abbr title="Uniform Resource Locator">URL</abbr> of the page</span><strong class="required"> (required)</strong>
@@ -484,23 +497,23 @@
                     <input required type="url" name="login-err-url" class="form-control" id="login-err-url">
                 </div>
 				
-				<!-- FIELD: Page Name -->
+		<!-- FIELD: Page Name -->
                 <div>
                     <label class="required" for="login-err-page">
-						<span class="field-name">Name of the page</span><strong class="required"> (required)</strong>
+						<span class="field-name">Name of the page</span>
                     </label>
                     <input required type="text" name="login-err-page" class="form-control" id="login-err-page">
                 </div>
 
-				<!-- FIELD: Browser -->
+		<!-- FIELD: Browser -->
                 <div>
                     <label class="required" for="login-err-browser">
-						<span class="field-name">Browser used</span><strong class="required"> (required)</strong>
+						<span class="field-name">Browser used</span>
                     </label>
                     <input required type="text" name="login-err-browser" class="form-control" id="login-err-browser">
                 </div>
 
-				<!-- FIELD: Device Type -->
+		<!-- FIELD: Device Type -->
                 <div>
                     <label class="required" for="login-err-device">
 						<span class="field-name">Device used</span><strong class="required"> (required)</strong>
@@ -508,28 +521,28 @@
                     <input required type="text" name="login-err-device" class="form-control" id="login-err-device">
                 </div>
 
-				<!-- FIELD: Date -->
+		<!-- FIELD: Date -->
                 <div>
                     <label class="required" for="login-err-date">
-                        Date the problem occurred <strong class="required"> (required)</strong>
+                        Date the problem occurred
                     </label>
                     <input required type="date" name="login-err-date" class="form-control" id="login-err-date">
                 </div>
 
-				<!-- FIELD: Time -->
+		<!-- FIELD: Time -->
                 <div class="mrgn-tp-md mrgn-bttm-md">
-                    <label class="required" for="login-err-time">Time the problem occurred <strong class="required">(required)</strong></label>
+                    <label class="required" for="login-err-time">Time the problem occurred</label>
                     <input type="time" name="login-err-time" class="form-control" id="login-err-time" size="20">
                 </div>
 				
-				<!-- FIELD: Screenshot -->
+		<!-- FIELD: Screenshot -->
                 <div>
                     <label class="full-width" for="lgn-err-scrnsht">Attach a screenshot</label>
                     <p>Please make sure that the address bar is visible in the image.</p>
                     <input type="file" multiple id="login-err-screenshot" value="Insert a screenshot" name="lgn-err-scrnsht" ><span id="n033"></span>
                 </div>
 				
-				<!-- BUTTONS: Submit and Reset -->
+		<!-- BUTTONS: Submit and Reset -->
                 <div class="mrgn-tp-lg mrgn-bttm-md">
                     <button type="submit" class="btn btn-primary">Submit</button>
                     <button type="reset" class="btn btn-primary">Reset</button>
@@ -538,6 +551,13 @@
             </section>
 
 
+	
+	<!-- FYI LABEL = REMOVE -->
+	<div id="optn-03-label" class="" style="text-align:left;">
+		<span class="label label-danger" style="font-size:; align-content:;">Associated Dropdown Option:</span>
+		<span class="text-danger" style="font-size:; font-weight:bold; align-content:;">"Reporting an issue with the online service"</span>
+	</div>
+	
             <!-- OPTION 3: Report an issue with AORS form -->
             <section id="report-issue" class="form-group well" style="display:;">
                 <label for="details">Report an issue with the system</label>
@@ -638,15 +658,29 @@
             </section>
 
 
+
+	<!-- FYI LABEL = REMOVE -->
+	<div id="optn-04-label" class="" style="text-align:left;">
+		<span class="label label-danger" style="font-size:;">Associated Dropdown Option:</span>
+		<span class="text-danger" style="font-size:; font-weight:bold;">"To ask a question about how ATIP works"</span>
+	</div>
+
             <!-- OPTION 4: ATIP Policy Question -->
             <section id="atip-policy" class="form-group well" style="display:;">
-                <label>ATIP Policy Question</label>
+                <label>ATIP Question</label>
                 <p>To know more about ATIP policies, we encourage users to contact the Treasury Board Secretariat's <a href="mailto:">ATIP Policy Expertise Centre</a><span style="font-weight:bold; color:red;">***</span>.</p>
 				<p style="text-align:left;"><span style="font-weight:bold; color:red;">***</span>Currently links to nothing.</p>
 			
 				
             </section>
 
+
+
+	<!-- FYI LABEL = REMOVE -->
+	<div id="optn-05-label" class="" style="text-align:left;">
+		<span class="label label-danger" style="font-size:;">Associated Dropdown Option:</span>
+		<span class="text-danger" style="font-size:; font-weight:bold;">"Looking for help using the system"</span>
+	</div>
 
             <!-- OPTION 5: Help using AORS -->
             <section id="aors-help" class="form-group well" style="display:;">
