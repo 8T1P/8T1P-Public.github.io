@@ -1,0 +1,55 @@
+
+
+/* Custom Effects */
+/*
+* class="blink" → Makes an element blink on hover
+* class="tooltip" → For the parent div of the tooltip text.
+* class="tooltiptext" → For the span element that will contain the actual text
+*/
+
+
+/* Animation Code */
+	@keyframes blink {
+		from {opacity: 0;}
+		to {opacity: 1;}
+	}
+
+
+	/* Element to which animation should apply */
+	.blink:hover {
+		animation-name: blink;
+		animation-iteration-count: infinite;
+		animation-duration:0.3s;
+		animation-delay:0s;
+		animation-timing-function:linear;
+	}
+
+
+	/* Tooltip container */
+	.tooltip {
+		  position: relative;
+		  display: inline-block;
+		  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+	}
+
+
+/* Tooltip text */
+	.tooltip .tooltiptext {
+		  visibility: hidden;
+		  width: 120px;
+		  background-color: black;
+		  color: #fff;
+		  text-align: center;
+		  padding: 5px 0;
+		  border-radius: 6px;
+	 
+		/* Position the tooltip text - see examples below! */
+		position: absolute;
+		z-index: 1;
+	}
+
+	/* Show the tooltip text when you mouse over the tooltip container */
+	.tooltip:hover .tooltiptext {
+		visibility: visible;
+	}
+
